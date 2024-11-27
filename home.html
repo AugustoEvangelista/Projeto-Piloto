@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style_home.css" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <title>France Perfum Store</title>
+  </head>
+  <body>
+    <!-- Início Menu -->
+    <header id="header">
+      <a id="logo" href="./home.html"
+        ><img
+          src="./img/perfumes/logo_france_perfumes.png"
+          alt="Logo France Perfum Store"
+      /></a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <!-- Em button estamos tratando a função do menu hamburger -->
+        <!--Início opções Menu  -->
+        <ul id="menu" role="menu">
+          <li><a class="linkMenu" href="./home.html">Home</a></li>
+          <li><a class="linkMenu" href="#">Quem Somos</a></li>
+          <li><a class="linkMenu" href="#">Produto</a></li>
+          <li><a class="linkMenu" href="#">Contato</a></li>
+          <li><a class="linkMenu" href="#">#Blog</a></li>
+        </ul>
+        <!-- Fim opções de Menu -->
+      </nav>
+    </header>
+    <!-- Fim Menu -->
+    <!-- Início Carousel Página Home -->
+    <div
+      id="carouselExampleInterval"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      ><!-- Para retirar a função do mouse com STOP no carousel adicione
+    a função data-bs-pause="none" -->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <img src="../img/resort1.jfif" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img src="../img/resort_maldivas.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img src="../img/resort_orlando.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img src="../img/bungalows-facing-mont.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <!-- Início controle Carousel -->
+       <button class="carousel-control-prev" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+       </button>
+       <button class="carousel-control-next" data-bs-target="#carouselExampleInterval" type="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+       </button>
+      <!-- Fim controle Carousel -->
+    </div>
+    <!-- Fim Carousel Página Home -->
+  </body>
+
+  <script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+</html>
